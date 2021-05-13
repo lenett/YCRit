@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30717.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EvaBot", "EvaBot\EvaBot.csproj", "{3995BF11-2B0D-47F7-A6ED-79F0B9C5893A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3995BF11-2B0D-47F7-A6ED-79F0B9C5893A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3995BF11-2B0D-47F7-A6ED-79F0B9C5893A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3995BF11-2B0D-47F7-A6ED-79F0B9C5893A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3995BF11-2B0D-47F7-A6ED-79F0B9C5893A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A58BDBBB-B600-47A5-8165-11D9239359E3}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "NCiXY3DuJgwqfXdpjKj23r2JaN/tFBIGnL5K1+yD3Hbj45HWN1kjYJ2V0MBMQtjO7pIwa0H2Mu9+RmcIXg+OCQ==",
+  "success": true,
+  "projectFilePath": "D:\\Projects\\c#\\EvaBot\\EvaBot\\EvaBot\\EvaBot\\EvaBot.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Кирилл\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.9\\microsoft.visualstudio.azure.containers.tools.targets.1.10.9.nupkg.sha512"
+  ],
+  "logs": []
+}
