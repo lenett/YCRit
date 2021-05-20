@@ -12,28 +12,9 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
-#nullable restore
-#line 1 "D:\Projects\c#\EvaBot\EvaBot\EvaBot\EvaBot\Views\_ViewImports.cshtml"
-using EvaBot;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
-#line 2 "D:\Projects\c#\EvaBot\EvaBot\EvaBot\EvaBot\Views\_ViewImports.cshtml"
-using EvaBot.Models;
-
-#line default
-#line hidden
-#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"d0bdb073b5ff53c86a0b07e5f9a407ba06421247", @"/Views/Movies/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"5060a02304f17038ff94500bc23c9f861994fdb6", @"/Views/_ViewImports.cshtml")]
     public class Views_Movies_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<IEnumerable<EvaBot.Models.Movie>>
     {
-        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-action", "Create", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
-        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_1 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-action", "Edit", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
-        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_2 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-action", "Details", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
-        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_3 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-action", "Delete", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
         #line hidden
         #pragma warning disable 0649
         private global::Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext __tagHelperExecutionContext;
@@ -56,7 +37,6 @@ using EvaBot.Models;
         }
         private global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.HeadTagHelper __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_HeadTagHelper;
         private global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.BodyTagHelper __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_BodyTagHelper;
-        private global::Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper;
         #pragma warning disable 1998
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
@@ -70,7 +50,7 @@ using EvaBot.Models;
 #line hidden
 #nullable disable
             WriteLiteral("\r\n<!DOCTYPE html>\r\n\r\n<html>\r\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d0bdb073b5ff53c86a0b07e5f9a407ba064212474779", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d0bdb073b5ff53c86a0b07e5f9a407ba064212472945", async() => {
                 WriteLiteral("\r\n    <meta name=\"viewport\" content=\"width=device-width\" />\r\n    <title>Index</title>\r\n");
             }
             );
@@ -84,24 +64,8 @@ using EvaBot.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d0bdb073b5ff53c86a0b07e5f9a407ba064212475838", async() => {
-                WriteLiteral("\r\n<p>\r\n    ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d0bdb073b5ff53c86a0b07e5f9a407ba064212476107", async() => {
-                    WriteLiteral("Create New");
-                }
-                );
-                __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper>();
-                __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper);
-                __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Action = (string)__tagHelperAttribute_0.Value;
-                __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_0);
-                await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
-                if (!__tagHelperExecutionContext.Output.IsContentModified)
-                {
-                    await __tagHelperExecutionContext.SetOutputContentAsync();
-                }
-                Write(__tagHelperExecutionContext.Output);
-                __tagHelperExecutionContext = __tagHelperScopeManager.End();
-                WriteLiteral("\r\n</p>\r\n<table class=\"table\">\r\n    <thead>\r\n        <tr>\r\n            <th>\r\n                ");
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d0bdb073b5ff53c86a0b07e5f9a407ba064212474004", async() => {
+                WriteLiteral("\r\n<p>\r\n    <a asp-action=\"Create\">Create New</a>\r\n</p>\r\n<table class=\"table\">\r\n    <thead>\r\n        <tr>\r\n            <th>\r\n                ");
 #nullable restore
 #line 22 "D:\Projects\c#\EvaBot\EvaBot\EvaBot\EvaBot\Views\Movies\Index.cshtml"
            Write(Html.DisplayNameFor(model => model.Title));
@@ -173,100 +137,37 @@ using EvaBot.Models;
 #line default
 #line hidden
 #nullable disable
-                WriteLiteral("\r\n            </td>\r\n            <td>\r\n                ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d0bdb073b5ff53c86a0b07e5f9a407ba0642124710210", async() => {
-                    WriteLiteral("Edit");
-                }
-                );
-                __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper>();
-                __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper);
-                __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Action = (string)__tagHelperAttribute_1.Value;
-                __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_1);
-                if (__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues == null)
-                {
-                    throw new InvalidOperationException(InvalidTagHelperIndexerAssignment("asp-route-id", "Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper", "RouteValues"));
-                }
-                BeginWriteTagHelperAttribute();
+                WriteLiteral("\r\n            </td>\r\n            <td>\r\n                <a asp-action=\"Edit\"");
+                BeginWriteAttribute("asp-route-id", " asp-route-id=\"", 1262, "\"", 1285, 1);
 #nullable restore
 #line 52 "D:\Projects\c#\EvaBot\EvaBot\EvaBot\EvaBot\Views\Movies\Index.cshtml"
-                                       WriteLiteral(item.Id);
+WriteAttributeValue("", 1277, item.Id, 1277, 8, false);
 
 #line default
 #line hidden
 #nullable disable
-                __tagHelperStringValueBuffer = EndWriteTagHelperAttribute();
-                __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["id"] = __tagHelperStringValueBuffer;
-                __tagHelperExecutionContext.AddTagHelperAttribute("asp-route-id", __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["id"], global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
-                await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
-                if (!__tagHelperExecutionContext.Output.IsContentModified)
-                {
-                    await __tagHelperExecutionContext.SetOutputContentAsync();
-                }
-                Write(__tagHelperExecutionContext.Output);
-                __tagHelperExecutionContext = __tagHelperScopeManager.End();
-                WriteLiteral(" |\r\n                ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d0bdb073b5ff53c86a0b07e5f9a407ba0642124712461", async() => {
-                    WriteLiteral("Details");
-                }
-                );
-                __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper>();
-                __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper);
-                __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Action = (string)__tagHelperAttribute_2.Value;
-                __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_2);
-                if (__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues == null)
-                {
-                    throw new InvalidOperationException(InvalidTagHelperIndexerAssignment("asp-route-id", "Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper", "RouteValues"));
-                }
-                BeginWriteTagHelperAttribute();
+                EndWriteAttribute();
+                WriteLiteral(">Edit</a> |\r\n                <a asp-action=\"Details\"");
+                BeginWriteAttribute("asp-route-id", " asp-route-id=\"", 1338, "\"", 1361, 1);
 #nullable restore
 #line 53 "D:\Projects\c#\EvaBot\EvaBot\EvaBot\EvaBot\Views\Movies\Index.cshtml"
-                                          WriteLiteral(item.Id);
+WriteAttributeValue("", 1353, item.Id, 1353, 8, false);
 
 #line default
 #line hidden
 #nullable disable
-                __tagHelperStringValueBuffer = EndWriteTagHelperAttribute();
-                __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["id"] = __tagHelperStringValueBuffer;
-                __tagHelperExecutionContext.AddTagHelperAttribute("asp-route-id", __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["id"], global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
-                await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
-                if (!__tagHelperExecutionContext.Output.IsContentModified)
-                {
-                    await __tagHelperExecutionContext.SetOutputContentAsync();
-                }
-                Write(__tagHelperExecutionContext.Output);
-                __tagHelperExecutionContext = __tagHelperScopeManager.End();
-                WriteLiteral(" |\r\n                ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d0bdb073b5ff53c86a0b07e5f9a407ba0642124714718", async() => {
-                    WriteLiteral("Delete");
-                }
-                );
-                __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper>();
-                __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper);
-                __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Action = (string)__tagHelperAttribute_3.Value;
-                __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_3);
-                if (__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues == null)
-                {
-                    throw new InvalidOperationException(InvalidTagHelperIndexerAssignment("asp-route-id", "Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper", "RouteValues"));
-                }
-                BeginWriteTagHelperAttribute();
+                EndWriteAttribute();
+                WriteLiteral(">Details</a> |\r\n                <a asp-action=\"Delete\"");
+                BeginWriteAttribute("asp-route-id", " asp-route-id=\"", 1416, "\"", 1439, 1);
 #nullable restore
 #line 54 "D:\Projects\c#\EvaBot\EvaBot\EvaBot\EvaBot\Views\Movies\Index.cshtml"
-                                         WriteLiteral(item.Id);
+WriteAttributeValue("", 1431, item.Id, 1431, 8, false);
 
 #line default
 #line hidden
 #nullable disable
-                __tagHelperStringValueBuffer = EndWriteTagHelperAttribute();
-                __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["id"] = __tagHelperStringValueBuffer;
-                __tagHelperExecutionContext.AddTagHelperAttribute("asp-route-id", __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["id"], global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
-                await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
-                if (!__tagHelperExecutionContext.Output.IsContentModified)
-                {
-                    await __tagHelperExecutionContext.SetOutputContentAsync();
-                }
-                Write(__tagHelperExecutionContext.Output);
-                __tagHelperExecutionContext = __tagHelperScopeManager.End();
-                WriteLiteral("\r\n            </td>\r\n        </tr>\r\n");
+                EndWriteAttribute();
+                WriteLiteral(">Delete</a>\r\n            </td>\r\n        </tr>\r\n");
 #nullable restore
 #line 57 "D:\Projects\c#\EvaBot\EvaBot\EvaBot\EvaBot\Views\Movies\Index.cshtml"
 }

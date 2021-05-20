@@ -10,6 +10,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using EvaBot.Data.Interfaces;
+using EvaBot.Data.Mocks;
 
 namespace EvaBot
 {
@@ -25,6 +27,10 @@ namespace EvaBot
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+
+            services.AddTransient<IAllCars, MockCars>();
+            services.AddTransient<iCarsCategory, MockCategory>();
+
             services.AddControllersWithViews();
 
             services.AddDbContext<MvcMovieContext>(options =>
@@ -55,7 +61,7 @@ namespace EvaBot
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=Cars}/{action=List}/{id?}");
             });
         }
     }
