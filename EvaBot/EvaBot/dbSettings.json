@@ -1,5 +1,0 @@
-{
-    "ConnectionStrings": {
-        "EvaBotContext": "Server=(localdb)\\mssqllocaldb;Database=EvaBotContext-1;Trusted_Connection=True;MultipleActiveResultSets=true"
-    }
-}
