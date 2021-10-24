@@ -35,6 +35,12 @@ namespace EvaWeb
             services.AddIdentity<User, IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationContext>();
 
+            services.AddAuthorization(opts => {
+                opts.AddPolicy("Administrator", policy => {
+                    policy.RequireRole("admin");
+                });
+            });
+
             services.AddControllersWithViews();
         }
 

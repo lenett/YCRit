@@ -1,10 +1,11 @@
 ﻿@*
     For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
 *@
+@using Microsoft.AspNetCore.Authorization
+@inject IAuthorizationService AuthorizationService
 
 <style>
     .collapsible {
-        
         color: white;
         cursor: pointer;
         padding: 18px;
@@ -13,6 +14,7 @@
         text-align: left;
         outline: none;
         font-size: 15px;
+        background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
     }
 
         .collapsible:after {
@@ -30,9 +32,10 @@
     .content {
         padding: 0 18px;
         max-height: 0;
+        color: white;
         overflow: hidden;
         transition: max-height 0.2s ease-out;
-        background-color: black;
+        background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
     }
 </style>
 
@@ -124,18 +127,21 @@
                 Home
             </a>
         </li>
+        @if ((await AuthorizationService.AuthorizeAsync(User, "Administrator")).Succeeded)
+        {
+            <li>
+                <a href="/identity/account/Register" class="nav-link text-white">
+                    <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
+                    Dashboard
+                </a>
+            </li>
+        }
         <li>
-            <a href="/identity/account/Register" class="nav-link text-white">
-                <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
-                Dashboard
-            </a>
-        </li>
-        <li>
-            <button class="collapsible bg-dark">
+            <button class="collapsible">
                 <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
                 Homer
             </button>
-            <div class="content text-white bg-dark">
+            <div class="content">
                 <p>asfasf</p>
             </div>
         </li>
