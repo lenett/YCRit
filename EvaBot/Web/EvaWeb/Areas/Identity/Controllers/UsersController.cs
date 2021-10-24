@@ -1,5 +1,6 @@
 ﻿using EvaWeb.Areas.Identity.Models;
 using EvaWeb.Areas.Identity.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System;
