@@ -1,12 +1,14 @@
-﻿@model IEnumerable<EvaWeb.Areas.Identity.Models.User>
+﻿
 @{
     ViewBag.Title = "Список пользователей";
+    Layout = "_Layout";
 }
 
 <a asp-action="Create">Добавить пользователя</a>
 
 <table class="table">
     <tr><th>Email</th><th>Год</th><th></th></tr>
+    @model IEnumerable<EvaWeb.Areas.Identity.Models.User>
     @foreach (var user in Model)
     {
         <tr>
@@ -23,3 +25,5 @@
         </tr>
     }
 </table>
+
+

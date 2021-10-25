@@ -36,7 +36,7 @@ namespace EvaWeb.Areas.Identity.Controllers
                 {
                     // установка куки
                     await _signInManager.SignInAsync(user, false);
-                    return RedirectToAction("Hone/indexs");
+                    return RedirectToAction("Index", "Home", new { Area = "" });
                 }
                 else
                 {
@@ -70,7 +70,7 @@ namespace EvaWeb.Areas.Identity.Controllers
                     }
                     else
                     {
-                        return RedirectToAction("Index", "Home");
+                        return RedirectToAction("Index", "Home", new { Area = "" });
                     }
                 }
                 else
@@ -87,8 +87,9 @@ namespace EvaWeb.Areas.Identity.Controllers
         {
             // удаляем аутентификационные куки
             await _signInManager.SignOutAsync();
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("Index", "Home", new { Area = "" });
         }
+
     }
 
 }
