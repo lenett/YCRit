@@ -7,6 +7,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using EvaWeb.ViewModels;
+using EvaWeb.Models;
 
 namespace EvaWeb.Areas.Identity.Controllers
 {
@@ -28,9 +30,10 @@ namespace EvaWeb.Areas.Identity.Controllers
         [HttpPost]
         public async Task<IActionResult> Create(CreateUserViewModel model)
         {
+            
             if (ModelState.IsValid)
             {
-                User user = new User { Email = model.Email, UserName = model.Email, Year = model.Year };
+                User user = new User { Email = model.Email, UserName = model.Email};
                 var result = await _userManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {
@@ -54,7 +57,7 @@ namespace EvaWeb.Areas.Identity.Controllers
             {
                 return NotFound();
             }
-            EditUserViewModel model = new EditUserViewModel { Id = user.Id, Email = user.Email, Year = user.Year };
+            EditUserViewModel model = new EditUserViewModel { Id = user.Id, UserName = user.UserName};
             return View(model);
         }
 
@@ -66,9 +69,7 @@ namespace EvaWeb.Areas.Identity.Controllers
                 User user = await _userManager.FindByIdAsync(model.Id);
                 if (user != null)
                 {
-                    user.Email = model.Email;
-                    user.UserName = model.Email;
-                    user.Year = model.Year;
+                    user.UserName = model.UserName;
 
                     var result = await _userManager.UpdateAsync(user);
                     if (result.Succeeded)

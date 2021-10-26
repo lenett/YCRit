@@ -9,8 +9,8 @@ namespace EvaWeb.Areas.Identity.ViewModels
     public class LoginViewModel
     {
         [Required]
-        [Display(Name = "Email")]
-        public string Email { get; set; }
+        [Display(Name = "Имя пользователя")]
+        public string UserName { get; set; }
 
         [Required]
         [DataType(DataType.Password)]

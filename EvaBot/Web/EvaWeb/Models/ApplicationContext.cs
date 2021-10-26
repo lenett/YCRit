@@ -1,16 +1,21 @@
 ﻿using EvaWeb.Areas.Identity.Models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using EvaWeb.ViewModels;
+
 
 namespace EvaWeb.Models
 {
     public class ApplicationContext : IdentityDbContext<User>
     {
+        public DbSet<NavibarLink> NavibarLinks { get; set; }
         public ApplicationContext(DbContextOptions<ApplicationContext> options)
             : base(options)
         {
-            Database.EnsureCreated();
+            //Database.EnsureCreated();
         }
+
     }
+
 }
 
