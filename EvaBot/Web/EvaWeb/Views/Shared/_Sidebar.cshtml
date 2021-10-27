@@ -103,14 +103,14 @@
         <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
         <span class="fs-4">Eva</span>
     </a>
-    
+
     @await Component.InvokeAsync("LoginBar")
 
     <hr>
     <ul class="nav nav-pills flex-column mb-auto">
+        @await Component.InvokeAsync("Navibar")
 
         <li class="nav-item">
-
             <a href="/identity/account/login" class="nav-link active" aria-current="page">
                 <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
                 Home
@@ -123,26 +123,13 @@
             </a>
         </li>
         @if ((await AuthorizationService.AuthorizeAsync(User, "Administrator")).Succeeded)
-        {
-            <li>
-                <button class="collapsible nav-link">
-                    <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
-                    Администрирование
-                </button>
-                <div class="content nav-link">
-                    <a href="/identity/users/index" class="nav-link text-white">
-                        <svg class="bi me-2" width="16" height="16"> <use xlink:href="#table"> </use> </svg>
-                        Пользователи
-                    </a>
-                </div>
-            </li>
-        }
-        <li>
-            <a href="/identity/users/index" class="nav-link text-white">
-                <svg class="bi me-2" width="16" height="16"> <use xlink:href="#table"> </use> </svg>
-                Orders
-            </a>
-        </li>
+
+<li>
+    <a href="/identity/users/index" class="nav-link text-white">
+        <svg class="bi me-2" width="16" height="16"> <use xlink:href="#table"> </use> </svg>
+        Orders
+    </a>
+</li>
         <li>
             <a href="#" class="nav-link text-white">
                 <svg class="bi me-2" width="16" height="16"> <use xlink:href="#grid"> </use> </svg>
@@ -155,7 +142,20 @@
                 Customers
             </a>
         </li>
-    </ul>
+    </ul> {
+    <li>
+        <button class="collapsible nav-link">
+            <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
+            Администрирование
+        </button>
+        <div class="content nav-link">
+            <a href="/identity/users/index" class="nav-link text-white">
+                <svg class="bi me-2" width="16" height="16"> <use xlink:href="#table"> </use> </svg>
+                Пользователи
+            </a>
+        </div>
+    </li>
+    }
     <hr>
 
 </div>

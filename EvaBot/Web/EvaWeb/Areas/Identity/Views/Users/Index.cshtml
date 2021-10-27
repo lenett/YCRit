@@ -8,12 +8,19 @@
 
 <table class="table">
     <tr><th>Email</th><th></th></tr>
-    @model IEnumerable<EvaWeb.ViewModels.NavibarLink>
+    @model IEnumerable<EvaWeb.Areas.Identity.Models.User>
     @foreach (var user in Model)
     {
         <tr>
-            <td>@user.id</td>
-           
+            <td>@user.UserName</td>
+            <td>
+                <form asp-action="Delete" asp-route-id="@user.Id" method="post">
+                    <a class="btn btn-sm btn-primary" asp-action="Edit" asp-route-id="@user.Id">Изменить</a>
+                    <button type="submit" class="btn btn-sm btn-danger">
+                        Удалить
+                    </button>
+                </form>
+            </td>
         </tr>
     }
 </table>

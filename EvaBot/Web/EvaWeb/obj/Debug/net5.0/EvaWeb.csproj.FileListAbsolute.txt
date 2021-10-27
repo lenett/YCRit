@@ -157,5 +157,4 @@ E:\projects\EvaBot\EvaBot\Web\EvaWeb\obj\Debug\net5.0\Razor\Areas\Identity\Views
 E:\projects\EvaBot\EvaBot\Web\EvaWeb\obj\Debug\net5.0\Razor\Areas\Identity\Views\Roles\Index.cshtml.g.cs
 E:\projects\EvaBot\EvaBot\Web\EvaWeb\obj\Debug\net5.0\Razor\Views\Shared\Components\LoginBar\Default.cshtml.g.cs
 E:\projects\EvaBot\EvaBot\Web\EvaWeb\obj\Debug\net5.0\Razor\Views\Shared\Components\Navibar\Default.cshtml.g.cs
-E:\projects\EvaBot\EvaBot\Web\EvaWeb\obj\Debug\net5.0\Razor\Areas\Identity\Views\Users\Index - Копировать.cshtml.g.cs
 E:\projects\EvaBot\EvaBot\Web\EvaWeb\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll

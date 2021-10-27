@@ -1,1 +1,23 @@
-﻿@model EvaWeb.Areas.Identity.ViewModels.LoginViewModel
+﻿@model List<EvaWeb.Models.NavibarLink>
+@{
+    int gId = -1;
+}
+
+@foreach (var link in Model)
+{
+    @Html.Raw(link.GetOpLi())
+    @if (link.content)@Html.Raw("<div class= " + '\u0022' + "content nav-link text-white " + '\u0022' +">")
+    <a href="@link.link" class="nav-link @link.classParametrs" >
+        <svg class="bi me-2" width="16" height="16"><use xlink:href="@link.image"></use></svg>
+        @link.text
+    </a>
+    @if (link.content)@Html.Raw("</div>")
+    <div class="content nav-link text-white">
+        <a href="/identity/users/index" class="nav-link">
+            <svg class="bi me-2" width="16" height="16"> <use xlink:href="#table"> </use> </svg>
+            Пользователиgfddfghfgdfgh
+        </a>
+    </div>
+    @Html.Raw(link.GetEndLi())
+
+}

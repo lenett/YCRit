@@ -7,7 +7,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using EvaWeb.ViewModels;
 using EvaWeb.Models;
 
 namespace EvaWeb.Areas.Identity.Controllers
