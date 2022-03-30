@@ -20,6 +20,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Areas\library\Models\" />
+    <Folder Include="Areas\library\ViewModels\" />
+    <Folder Include="Areas\library\Views\" />
     <Folder Include="ViewModels\" />
   </ItemGroup>
 
