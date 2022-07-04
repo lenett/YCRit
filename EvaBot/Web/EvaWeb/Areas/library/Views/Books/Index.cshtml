@@ -1,0 +1,32 @@
+﻿@model IEnumerable<EvaWeb.Areas.library.Models.Books>
+
+@{
+    ViewBag.Title = "Все книги";
+}
+
+@Html.ActionLink("Добавить книгу","Create","Books")
+
+<table class="table">
+    <tr>
+        <td>Имя</td>
+        <td></td>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @item.Name
+
+
+                @if (item.Picture != null)
+                {
+                    <img style='width:80px; height:80px;' src="data:image/jpeg;base64,@(Convert.ToBase64String(item.Picture))" />
+                }
+            </td>
+            <td>
+                @Html.ActionLink("Удалить","Delete","Books", new {id=item.Id})
+            </td>
+        </tr>
+    }
+</table>

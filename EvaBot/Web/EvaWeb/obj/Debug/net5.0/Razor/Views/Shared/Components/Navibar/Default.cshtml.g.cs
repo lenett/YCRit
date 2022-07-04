@@ -27,7 +27,7 @@ using EvaWeb.Models;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"f835247a5a9f37d1a2d2a70f8ae80144a11b1b7d", @"/Views/Shared/Components/Navibar/Default.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"dd9b355673bf6f8fc3d025bc2c05402afbd821dc", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"0e82a7b2f714d07033893392fd53a2acbf90ae39", @"/Views/_ViewImports.cshtml")]
     #nullable restore
     public class Views_Shared_Components_Navibar_Default : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<List<EvaWeb.Models.NavibarLink>>
     #nullable disable

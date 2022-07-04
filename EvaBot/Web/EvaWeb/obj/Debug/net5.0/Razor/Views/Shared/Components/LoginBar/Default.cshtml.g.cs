@@ -27,7 +27,7 @@ using EvaWeb.Models;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"8e38f29f4265e0e42d32fd28ef8d750ea6e045f6", @"/Views/Shared/Components/LoginBar/Default.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"dd9b355673bf6f8fc3d025bc2c05402afbd821dc", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"0e82a7b2f714d07033893392fd53a2acbf90ae39", @"/Views/_ViewImports.cshtml")]
     #nullable restore
     public class Views_Shared_Components_LoginBar_Default : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<EvaWeb.Areas.Identity.ViewModels.LoginViewModel>
     #nullable disable
