@@ -20,9 +20,9 @@ namespace EvaWeb.Components
         private List<NavibarLink> InicializeNavbar()
         {
             List<NavibarLink> navibarLink = new List<NavibarLink>();
-            navibarLink.Add(new NavibarLink { classParametrs = "nav-link text-white", image = "#home", link = "/identity/account/login", text = "Главная"});
-            navibarLink.Add(new NavibarLink { classParametrs = "nav-link text-white", image = "#table", link = "/library/books/index", text = "Библиотека"});
-            navibarLink.Add(new NavibarLink { classParametrs = "nav-link text-white", image = "#grid", link = "/identity/account/login", text = "Словарь"});
+            navibarLink.Add(new NavibarLink { classParametrs = "nav-link text-white", image = "#home", link = "/#", text = "Главная", opLi =true});
+            navibarLink.Add(new NavibarLink { classParametrs = "nav-link text-white", image = "#table", link = "/library/books/index", text = "Библиотека", opLi = true });
+            navibarLink.Add(new NavibarLink { classParametrs = "nav-link text-white", image = "#grid", link = "/identity/account/login", text = "Словарь", opLi = true });
             //navibarLink.Add(new NavibarLink { classParametrs = "collapsible", image = "#home", link = "#", text = "Администрирование", opLi = true });
             //navibarLink.Add(new NavibarLink { classParametrs = "", image = "#speedometer2", link = "/identity/account/login", text = "Пользователи", endLi = true, content=true });
 
