@@ -1,0 +1,17 @@
+﻿@model List<EvaWeb.Models.NavigationBarLink>
+@{
+    int gId = -1;
+}
+
+
+@foreach (var link in Model)
+{
+    @Html.Raw(link.GetStartLi())
+    @if (link.Content)@Html.Raw("<div class= " + '\u0022' + "content nav-link text-white " + '\u0022' +">")
+    <a href="@link.Link" class="nav-link @link.ClassParametrs" >
+        <svg class="bi me-2" width="16" height="16"><use xlink:href="@link.Image"></use></svg>
+        @link.Text
+    </a>
+     @Html.Raw(link.GetEndLi())
+
+}

@@ -5,9 +5,7 @@
     box-sizing: border-box;
 }
 
-/**
- * Максимальная высота базового контейнера
- */
+
 html {
     font-size: 100%;
 }
@@ -26,8 +24,6 @@ body {
     background: linear-gradient(45deg, #EECFBA, #C5DDE8);
 }
 
-
-/* изменяем полоcу прокрутки */
 
 ::-webkit-scrollbar {
     width: .65em;
@@ -163,7 +159,7 @@ a {
             "nav article ads"
             "nav footer footer";
         grid-template-rows: 0px 1fr 60px;
-        grid-template-columns: minmax(10%,200px) 1fr 0px;
+        grid-template-columns: 500px 1fr 0px;
         grid-gap: 10px;
         height: 100vh;
         margin: 0;

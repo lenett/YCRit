@@ -6,7 +6,7 @@
 
 <ul>
        @await Component.InvokeAsync("LoginBar")
-       @await Component.InvokeAsync("Navibar")
+       @await Component.InvokeAsync("NavigationBar")
 
         @if ((await AuthorizationService.AuthorizeAsync(User, "Administrator")).Succeeded)
 

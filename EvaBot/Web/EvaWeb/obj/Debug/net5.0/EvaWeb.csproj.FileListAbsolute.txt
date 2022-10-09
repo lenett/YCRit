@@ -304,7 +304,6 @@ D:\Projects\c#\EvaBot\GitHub\EvaBot\Web\EvaWeb\obj\Debug\net5.0\Razor\Areas\Iden
 D:\Projects\c#\EvaBot\GitHub\EvaBot\Web\EvaWeb\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
 D:\Projects\c#\EvaBot\GitHub\EvaBot\Web\EvaWeb\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
 D:\Projects\c#\EvaBot\GitHub\EvaBot\Web\EvaWeb\obj\Debug\net5.0\Razor\Views\Shared\Components\LoginBar\Default.cshtml.g.cs
-D:\Projects\c#\EvaBot\GitHub\EvaBot\Web\EvaWeb\obj\Debug\net5.0\Razor\Views\Shared\Components\Navibar\Default.cshtml.g.cs
 D:\Projects\c#\EvaBot\GitHub\EvaBot\Web\EvaWeb\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
 D:\Projects\c#\EvaBot\GitHub\EvaBot\Web\EvaWeb\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
 D:\Projects\c#\EvaBot\GitHub\EvaBot\Web\EvaWeb\obj\Debug\net5.0\Razor\Views\Shared\_Sidebar.cshtml.g.cs
@@ -332,3 +331,4 @@ D:\Projects\c#\EvaBot\GitHub\EvaBot\Web\EvaWeb\bin\Debug\net5.0\System.Web.WebPa
 D:\Projects\c#\EvaBot\GitHub\EvaBot\Web\EvaWeb\bin\Debug\net5.0\WebMatrix.Data.dll
 D:\Projects\c#\EvaBot\GitHub\EvaBot\Web\EvaWeb\bin\Debug\net5.0\WebMatrix.WebData.dll
 D:\Projects\c#\EvaBot\GitHub\EvaBot\Web\EvaWeb\bin\Debug\net5.0\Microsoft.Web.Infrastructure.dll
+D:\Projects\c#\EvaBot\GitHub\EvaBot\Web\EvaWeb\obj\Debug\net5.0\Razor\Views\Shared\Components\NavigationBar\Default.cshtml.g.cs
